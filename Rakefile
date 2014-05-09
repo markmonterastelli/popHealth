@@ -10,7 +10,7 @@ require 'rake'
 
 PopHealth::Application.load_tasks
 
-ENV['DB_NAME'] = "pophealth-#{Rails.env}"
+ENV['DB_NAME'] = "beat-#{Rails.env}"
 
 Rake::TestTask.new(:test_unit) do |t|
   t.libs << "test"
